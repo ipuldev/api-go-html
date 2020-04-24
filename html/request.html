@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PROCCESSING API</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $("#form-request").on("submit", function (e){
+            e.preventDefault();
+
+            var $init = $(this);
+
+            var payload = JSON.stringify({
+                key : $('[name = "key"]').val(),
+                data1 : $('[name = "data1"]').val(),
+                data2 : $('[name = "data2"]').val(),
+                data3 : $('[name = "data3"]').val()
+            });
+
+            $.ajax({
+                url : $init.attr("action"),
+                type : $init.attr("method"),
+                data : payload,
+                contentType : 'application/json',
+            }).then(function (res){
+                $(".message").text(res);
+            }).catch(function (a){
+                alert("ERROR");
+            });
+        });
+      });
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+        <a class="navbar-brand" href="/">API Manage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/request">Request <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/doc">Documentation</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+      </nav>
+      <div class="container">
+          <div class="mt-5"></div>
+          <div class="col-6 m-auto pt-5 pb-5 border rounded shadow-sm">
+              <form action="/proccess" method="post" id="form-request">
+                <div class="form-group">
+                    <label>Key</label>
+                    <input type="text" name="key" class="col-3 form-control">
+                </div>
+                <div class="form-group">
+                <label>Data One</label>
+                <input type="text" name="data1" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Data Two</label>
+                    <input type="text" name="data2" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Data Three</label>
+                    <input type="text" name="data3" class="form-control">
+                </div>
+                <button type="submit" class="m-auto btn btn-primary">Request</button>
+             </form>
+          </div>
+          <div class="mt-5"></div>
+          <div class="col-6 m-auto pt-5 pb-2 border rounded shadow-sm">
+            <span>Result QUERY</span>
+            <p class="message"></p>
+        </div>
+      </div>
+</body>
+</html>

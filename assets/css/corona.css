@@ -1,0 +1,239 @@
+
+.nav-bar{
+    padding-top: 8px;
+    background: #fff;
+    color: #000;
+    padding-left: 13px;
+}
+.title{
+    font-weight: 200;
+    margin-bottom: 7px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.div-home{
+    margin-top: 13px;
+}
+.content{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.content{
+    font-size: 14px;
+}
+.btn-card{
+    margin-top: -33px;
+}
+.card{
+    margin-top: 10px;
+}
+.plus{
+    margin-top: 54px;
+}
+.footer{
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    background: black;
+    color: #fff;
+}
+#example1{
+    background: url(http://localhost/corona/asset/picture/start.jpeg);
+    background-size: cover; 
+}
+.package{
+    margin: 10px;
+}
+.title-home{
+    font-weight: bold;
+}
+.title-2{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.title-data{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.bg-heal{
+    border: 1px solid #7ee1ab;
+    background-color: #e5f9ee;
+}
+.bg-dead{
+   margin-left: 16px;
+   border: 1px solid #ff5d6c;
+   background-color: #ffdee1;
+}
+.p-init{
+    width: 139px;
+    padding: initial;
+
+}
+.bg-positif{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: -78px;
+    border: 1px solid #ffad31;
+    background: #FFEFD5;
+}
+.margin-law{
+    margin-top: 16px;;
+}
+.shadow-corona{
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.14) !important;
+}
+.mr-save{
+    margin-left: 17px!important;
+    margin-right: 17px!important;
+}
+.bg-wa{
+    float: right;
+    margin-right: 14px;
+    background-color:  rgb(11, 194, 63);
+    color:#fff
+}
+.icon-map{
+    width: 34px;
+    padding-left: 4px;
+}
+.icon-map-1{
+    width: 40px;
+    padding-left: 4px;
+}
+.chat-text{
+    font-size: 17px;
+    font-weight: bold;
+}
+.icon-map-2{
+    width: 68px;
+    border-radius: 50%;
+    padding-left: 4px;
+}
+.btn-donate{
+    font-size: 18px;
+    font-weight: bold;
+}
+.pager{
+    margin-top: 59px;
+}
+.bg-heal-2{
+        background-color: #26b0f1;
+}
+.caracter{
+    background: #ffffff4d;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    display: flex;
+    border-radius: 50%;
+}
+.choose:hover{
+    background: #8080804d!important;
+}
+.bg-choose{
+    color: #000!important;
+    background: #fff;
+}
+.data-world{
+    height: 84px;
+    margin: 9px 0px 12px 0px;
+    padding-top: 23px;
+    font-size: 21px;
+}
+.bg-dead-2{
+    background: #ff5050;
+}
+.bg-positif-2{
+    background: #27c127;
+}
+
+.icon-map-3{
+    width: 68px;
+    border-radius: 50%;
+}
+.map-4{
+    width:58px;
+}
+.data-row{
+    margin-right:0!important;
+    margin-left:0!important;
+}
+.bg-btn{
+    background:#f9f9f9!important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.proccess{
+    filter: grayscale(100%);
+}
+.notif-jam{
+    font-size: 14px;
+}
+.div-campign{
+    background-image: url("../picture/asset_new/background.svg");
+    color: #fff;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    height: 214px;
+    margin-top: -19px;
+    padding: 85px 0px 0px 32px;
+}
+.indo{
+    font-size: 21px;
+}   
+.text-positif{
+    font-size: 30px;
+    font-weight: 900;
+    color: #e89f31; 
+}
+
+.text-meninggal{
+    font-size: 30px;
+    font-weight: 900;
+    color: #ff5d6c;
+}
+.text-sembuh{
+    font-size: 30px;
+    font-weight: 900;
+    color: #7ee1ab;
+}
+.init-item{
+    font-size: 16px;
+    border-bottom: 2px solid #7ee1ab;
+}
+.fitur-1{
+    height: 121px;
+    background-repeat: no-repeat;
+    background-image:  url("../picture/asset_new/donasi.svg");
+}
+.fitur-2{
+    height: 121px;
+    background-repeat: no-repeat;
+    background-image:  url("../picture/asset_new/tanya dokter.svg");
+}
+.fitur-3{
+    height: 121px;
+    background-repeat: no-repeat;
+    background-image:  url("../picture/asset_new/info penyebaran.svg");
+}
+.row-handle{
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+.mt-up{
+    margin-top: 78px;
+}
