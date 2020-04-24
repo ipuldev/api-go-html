@@ -3,4 +3,4 @@ Simple Rest API with golang
 TO USE IN TERMINAL
 go run main.go 
 
-before you must install go-driver-sql 
+you must be install go-driver-sql 
